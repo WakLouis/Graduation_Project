@@ -4,7 +4,7 @@
  * @Author: WakLouis
  * @Date: 2023-07-05 10:15:43
  * @LastEditors: WakLouis
- * @LastEditTime: 2023-07-05 11:53:04
+ * @LastEditTime: 2023-07-05 12:00:30
 -->
 ## <center>支持作业控制的unix shell程序的设计与实现</center>
 
@@ -34,3 +34,9 @@
 1. sigint_handler: Catches SIGINT(ctrl-c) signals.捕获SIGINT信号。
 
 1. sigtstp_handler: Catches SIGTSTP(ztrl-z) signals. 捕获SIGTSTP信号。
+
+## 日志
+
+### 2023.7.5
+
+Shell 接收一个 command line 时，如果第一个单词是一个内置命令，则立刻在当前进程中执行该命令，否则认为是一个可执行程序的路径。![Alt text](image-1.png)
